@@ -50,7 +50,6 @@ Quad::Quad(glm::vec2 position, glm::vec2 size, glm::vec4 color, GLuint shaderId,
 
 	// Delete unnecessary buffers (not actually deleted until the vao they are in is deleted)
 	glDeleteBuffers(1, &verticesVbo);
-	glDeleteBuffers(1, &indicesEbo);
 }
 
 Quad::~Quad()
