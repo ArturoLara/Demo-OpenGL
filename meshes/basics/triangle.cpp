@@ -47,7 +47,6 @@ triangle::triangle(glm::vec2 position, glm::vec2 size, glm::vec4 color, GLuint s
 
 	// Delete unnecessary buffers (not actually deleted until the vao they are in is deleted)
 	glDeleteBuffers(1, &verticesVbo);
-	glDeleteBuffers(1, &indicesEbo);
 }
 
 triangle::~triangle()
